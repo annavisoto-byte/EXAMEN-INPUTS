@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    transition: background-color 0.5s ease;
+}
+
+.boton-volver, .boton-avanzar {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #00838f; 
+    padding: 10px 20px;
+    margin: 0 10px 20px 10px; 
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-volver:hover, .boton-avanzar:hover {
+    background-color: #005662; 
+}
+
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.tabla {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tabla:hover {
+    transform: translateY(-5px);
+}
+
+.titulo {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tabla p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+strong {
+    color: #000;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 90%; 
+    max-width: 450px;
+    margin: 20px auto; 
+}
+
+input {
+    width: 90%;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #00838f;
+    background-color: #f9feff;
+}
+
+input[type="color"] {
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#boton {
+    background-color: #00838f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#boton:hover {
+    background-color: #005662;
+    transform: scale(1.02);
+}
+
+p {
+    font-size: 15px;
+    color: #333;
+    background-color: transparent; 
+}
+
+form p {
+    background-color: #e0f7fa;
+    padding: 8px;
+    border-radius: 5px;
+    border-left: 5px solid #00838f;
+    margin: 5px 0;
+    min-height: 20px;
+}
+
+br {
+    display: none;
+}
